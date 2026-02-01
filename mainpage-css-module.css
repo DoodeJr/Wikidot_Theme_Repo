@@ -1,0 +1,1292 @@
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.info-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    box-sizing: border-box;
+    width: 100%;
+}
+.info-box .title {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    color: #fff;
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.info-box .title-solid {
+    background: #1c1e2a;
+    color: #fff;
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.info-box .title-link {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 0.3s ease;
+}
+.info-box .title-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.info-box .title-link:hover {
+    background: #3a3d4a;
+}
+.info-box .title-link-solid {
+    background: #1c1e2a;
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 0.3s ease;
+}
+.info-box .title-link-solid a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.info-box .title-link-solid:hover {
+    background: #3a3d4a;
+}
+.info-box .title-collapse {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    padding: 4px 0;
+    transition: background 0.3s ease;
+}
+.info-box .title-collapse:hover {
+    background: #3a3d4a;
+}
+.info-box .title-collapse-solid {
+    background: #1c1e2a;
+    padding: 4px 0;
+    transition: background 0.3s ease;
+}
+.info-box .title-collapse-solid:hover {
+    background: #3a3d4a;
+}
+.info-box .title-collapse > .collapsible-block > .collapsible-block-folded > .collapsible-block-link,
+.info-box .title-collapse > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link > .collapsible-block-link,
+.info-box .title-collapse-solid > .collapsible-block > .collapsible-block-folded > .collapsible-block-link,
+.info-box .title-collapse-solid > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link > .collapsible-block-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1;
+    padding: 4px 16px;
+    display: block;
+    width: 100%;
+}
+.info-box .title-collapse > .collapsible-block > .collapsible-block-folded,
+.info-box .title-collapse > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link,
+.info-box .title-collapse-solid > .collapsible-block > .collapsible-block-folded,
+.info-box .title-collapse-solid > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link {
+    display: block;
+}
+.info-box .content {
+    background: #242529;
+    padding: 6px 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.info-grid .info-box {
+    margin: 0;
+    min-width: 0;
+}
+.info-grid-1x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.info-grid-1x2 .info-box {
+    margin: 0;
+    min-width: 0;
+}
+.info-grid-1x2-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.info-grid-1x2-link .info-box {
+    margin: 0;
+    min-width: 0;
+}
+.info-grid-1x2-link .info-box .title-link {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 0.3s ease;
+}
+.info-grid-1x2-link .info-box .title-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.info-grid-1x2-link .info-box .title-link:hover {
+    background: #3a3d4a;
+}
+.info-grid-1x2-link .info-box .title-link-solid {
+    background: #1c1e2a;
+    padding: 1px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 0.3s ease;
+}
+.info-grid-1x2-link .info-box .title-link-solid a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.info-grid-1x2-link .info-box .title-link-solid:hover {
+    background: #3a3d4a;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.featured-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+}
+.featured-box .featured-content {
+    background: #242529;
+    padding: 10px 14px;
+    transition: background 0.3s ease;
+    position: relative;
+}
+.featured-box .featured-content:hover {
+    background: #2a2d32;
+}
+.featured-box .featured-title {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    color: #fff;
+    padding: 4px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.featured-box .featured-title-solid {
+    background: #1c1e2a;
+    color: #fff;
+    padding: 4px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.featured-box .featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.featured-box .featured-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+.featured-box .featured-name a {
+    color: #7a9ec2;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.featured-box .featured-name a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.featured-box .featured-name a:hover {
+    color: #9dbde0;
+    text-decoration: underline;
+}
+.featured-box .featured-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+.featured-box .featured-desc {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 11px;
+    color: #aaa;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.featured-box .featured-desc a {
+    color: #7a9ec2;
+    text-decoration: none;
+}
+.featured-box .featured-desc a:hover {
+    text-decoration: underline;
+}
+
+.license-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    background-color: #1c1e2a;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+.license-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) scale(1);
+    width: 100px;
+    height: 100px;
+    background-image: url('http://nova-corporation-sandbox.wikidot.com/local--files/new-mainpage-staging/creativecommons.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.15;
+    filter: grayscale(100%);
+    pointer-events: none;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.license-box:hover::before {
+    transform: translateY(-50%) scale(3);
+    opacity: 0.08;
+}
+.license-box .license-main {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.license-box .license-main a {
+    color: #7a9ec2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.license-box .license-main a:hover {
+    text-decoration: underline;
+}
+.license-box .license-extra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease, margin 0.6s ease;
+    font-size: 11px;
+    font-weight: normal;
+    color: #aaa;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.license-box:hover .license-extra {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+}
+.license-box .license-extra a {
+    color: #7a9ec2;
+    text-decoration: none;
+}
+.license-box .license-extra a:hover {
+    text-decoration: underline;
+}
+.footer-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0 0 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    background-color: #1c1e2a;
+    color: #888;
+    padding: 6px 16px;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+.footer-box .footer-main {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 11px;
+    color: #888;
+    position: relative;
+    z-index: 1;
+    padding-left: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.footer-box .footer-main a {
+    color: #7a9ec2;
+    text-decoration: none;
+}
+.footer-box .footer-main a:hover {
+    text-decoration: underline;
+}
+.footer-box .footer-extra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    padding-left: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.footer-box:hover .footer-extra {
+    max-height: 150px;
+    opacity: 1;
+    margin-top: 6px;
+}
+.footer-box .footer-extra a {
+    color: #7a9ec2;
+    text-decoration: none;
+}
+.footer-box .footer-extra a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   FIREFOX MOBILE ONLY NOTICE BOX
+   Hidden by default, shown only on Firefox mobile
+   ========================================== */
+
+.firefox-mobile-notice {
+    display: none;
+}
+
+.hero-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    background-color: #1c1e2a;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    transition: padding 0.5s cubic-bezier(0, 0, 0.2, 1);
+    box-sizing: border-box;
+    width: 100%;
+}
+.hero-box:hover {
+    padding: 20px 20px 30px 20px;
+}
+.hero-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -142px;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-image: url(http://nova-corporation-sandbox.wikidot.com/local--files/new-mainpage-source/novaGrayscale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 246px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+.hero-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0a0b0d;
+    opacity: 0.95;
+    pointer-events: none;
+    transition: width 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.hero-box:hover::after {
+    opacity: 0.95;
+    width: 100%;
+}
+.hero-box .hero-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.hero-box .hero-subtitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #aaa;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.sub-default {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+.sub-hover {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+.hero-box .hero-subtitle .sub-default,
+.hero-box .hero-subtitle .sub-hover {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.2s ease 0.2s;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.hero-box .hero-subtitle .sub-default {
+    opacity: 1;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.hero-box .hero-subtitle .sub-hover {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 660px !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease 0.2s, max-height 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.hero-box:hover .hero-subtitle .sub-default {
+    opacity: 0;
+    transition: opacity 0.2s ease 0.2s;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.hero-box:hover .hero-subtitle .sub-hover {
+    opacity: 1;
+    max-height: 300px;
+    transition: opacity 0.2s ease 0.2s, max-height 0.5s cubic-bezier(0, 0, 0.2, 1);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.hero-box .hero-expanded {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 20px;
+    transition: max-height 0.5s cubic-bezier(0, 0, 0.2, 1), opacity 0.3s ease 0.2s, padding 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.hero-box:hover .hero-expanded {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px 20px;
+}
+.nav-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    box-sizing: border-box;
+    width: 100%;
+}
+.nav-box .nav-title {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    color: #fff;
+    padding: 4px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.nav-box .nav-content {
+    background: #242529;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+.nav-box .nav-item {
+    background: #1c1e2a;
+    border-radius: 4px;
+    padding: 12px 8px;
+    text-align: center;
+    transition: background 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    min-width: 0;
+}
+.nav-box .nav-item:nth-child(1):hover { background: #2a3a4a; }
+.nav-box .nav-item:nth-child(2):hover { background: #3a2a4a; }
+.nav-box .nav-item:nth-child(3):hover { background: #2a4a3a; }
+.nav-box .nav-item:nth-child(4):hover { background: #4a3a2a; }
+.nav-box .nav-item .nav-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+.nav-box .nav-item .nav-link a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    color: transparent;
+    text-decoration: none;
+}
+.nav-box .nav-item .nav-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 8px auto;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-box .nav-item .nav-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.nav-box .nav-item .nav-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.nav-box .nav-item .nav-sublabel {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 10px;
+    color: #aaa;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.news-box {
+    border: 1px solid #666;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+    box-sizing: border-box;
+    width: 100%;
+}
+.news-box .news-title {
+    background: linear-gradient(90deg, #1c1e2a, #2a2d3a);
+    color: #fff;
+    padding: 4px 16px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+.news-box .news-content {
+    background: #242529;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.news-box .news-content::-webkit-scrollbar {
+    width: 6px;
+}
+.news-box .news-content::-webkit-scrollbar-track {
+    background: #1c1e2a;
+}
+.news-box .news-content::-webkit-scrollbar-thumb {
+    background: #3a3d4a;
+    border-radius: 3px;
+}
+.news-box .news-content::-webkit-scrollbar-thumb:hover {
+    background: #4a4d5a;
+}
+.news-box .news-post {
+    padding: 10px 16px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+.news-box .news-post:last-child {
+    border-bottom: none;
+}
+.news-box .news-post:hover {
+    background: #2a2d32;
+}
+.news-box .news-post .news-tags {
+    margin-bottom: 8px;
+}
+.news-box .news-post .news-tag {
+    display: inline-block;
+    background: #1c1e2a;
+    color: #7a9ec2;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-bottom: 0;
+}
+.news-box .news-post .news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.news-box .news-post .news-post-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.news-box .news-post .news-post-title a {
+    color: #7a9ec2;
+    text-decoration: none;
+}
+.news-box .news-post .news-post-title a:hover {
+    text-decoration: underline;
+}
+.news-box .news-post .news-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+.news-box .news-post .news-author {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 6px;
+}
+.news-box .news-post .news-body {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-size: 11px;
+    color: #aaa;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* ==========================================
+   GENERAL MOBILE RESPONSIVE STYLES
+   (Applies to ALL mobile browsers)
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    
+    /* Grid layouts - single column on mobile */
+    .info-grid,
+    .info-grid-1x2,
+    .info-grid-1x2-link,
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    /* Nav box - 2 columns on mobile */
+    .nav-box .nav-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    /* News box - remove max-height on mobile */
+    .news-box .news-content {
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .hero-box .hero-title {
+        font-size: 20px;
+        letter-spacing: 0.2em;
+    }
+    
+    .nav-box .nav-content {
+        gap: 8px;
+        padding: 8px;
+    }
+}
+
+/* ==========================================
+   FIREFOX MOBILE ONLY FIXES
+   Using @supports for Firefox detection
+   combined with touch/mobile detection
+   ========================================== */
+
+/* Firefox-specific styles using -moz-appearance detection */
+@supports (-moz-appearance: none) {
+    
+    /* Only apply on touch devices (mobile) */
+    @media (hover: none) and (pointer: coarse) {
+        
+        /* ===== BOX BORDER CUTOFF FIX ===== */
+        .info-box,
+        .license-box,
+        .footer-box,
+        .hero-box,
+        .nav-box,
+        .news-box,
+        .featured-box {
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: visible;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        /* ===== COLLAPSIBLE HEADER TEXT CUTOFF FIX ===== */
+        .info-box .title-collapse,
+        .info-box .title-collapse-solid {
+            overflow: visible !important;
+            min-height: auto !important;
+            padding: 0 !important;
+        }
+        
+        .info-box .title-collapse > .collapsible-block,
+        .info-box .title-collapse-solid > .collapsible-block {
+            width: 100% !important;
+            display: block !important;
+        }
+        
+        .info-box .title-collapse > .collapsible-block > .collapsible-block-folded,
+        .info-box .title-collapse > .collapsible-block > .collapsible-block-unfolded,
+        .info-box .title-collapse-solid > .collapsible-block > .collapsible-block-folded,
+        .info-box .title-collapse-solid > .collapsible-block > .collapsible-block-unfolded {
+            width: 100% !important;
+            display: block !important;
+            overflow: visible !important;
+        }
+        
+        .info-box .title-collapse > .collapsible-block > .collapsible-block-folded > .collapsible-block-link,
+        .info-box .title-collapse > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link > .collapsible-block-link,
+        .info-box .title-collapse-solid > .collapsible-block > .collapsible-block-folded > .collapsible-block-link,
+        .info-box .title-collapse-solid > .collapsible-block > .collapsible-block-unfolded > .collapsible-block-unfolded-link > .collapsible-block-link {
+            font-size: 13px !important;
+            padding: 10px 14px !important;
+            line-height: 1.5 !important;
+            white-space: normal !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            display: block !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            text-overflow: clip !important;
+            overflow: visible !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        /* ===== NEWS BOX TEXT SIZE FIX ===== */
+        .news-box .news-post .news-post-title {
+            font-size: 13px !important;
+            line-height: 1.5 !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .news-box .news-post .news-date {
+            font-size: 11px !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .news-box .news-post .news-author {
+            font-size: 11px !important;
+        }
+        
+        .news-box .news-post .news-body {
+            font-size: 13px !important;
+            line-height: 1.6 !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .news-box .news-post .news-tag {
+            font-size: 10px !important;
+        }
+        
+        /* ===== FEATURED GRID BOX SIZE FIX ===== */
+        .featured-grid {
+            grid-template-columns: 1fr !important;
+        }
+        
+        .featured-grid .featured-box {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        .featured-box .featured-title,
+        .featured-box .featured-title-solid {
+            font-size: 13px !important;
+            padding: 10px 14px !important;
+            line-height: 1.4 !important;
+        }
+        
+        .featured-box .featured-content {
+            padding: 12px 14px !important;
+        }
+        
+        .featured-box .featured-name {
+            font-size: 14px !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .featured-box .featured-date {
+            font-size: 11px !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .featured-box .featured-desc {
+            font-size: 13px !important;
+            line-height: 1.6 !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        /* ===== NAV BOX TEXT/SIZE FIX ===== */
+        .nav-box .nav-title {
+            font-size: 13px !important;
+            padding: 10px 14px !important;
+        }
+        
+        .nav-box .nav-content {
+            padding: 14px !important;
+            gap: 12px !important;
+        }
+        
+        .nav-box .nav-item {
+            padding: 16px 12px !important;
+        }
+        
+        .nav-box .nav-item .nav-icon {
+            width: 48px !important;
+            height: 48px !important;
+            margin-bottom: 10px !important;
+        }
+        
+        .nav-box .nav-item .nav-label {
+            font-size: 13px !important;
+            letter-spacing: 0.05em !important;
+            line-height: 1.4 !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .nav-box .nav-item .nav-sublabel {
+            font-size: 11px !important;
+            line-height: 1.4 !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        /* ===== HERO BOX FLICKERING & SUBTITLE FIX ===== */
+        .hero-box {
+            padding: 20px 16px !important;
+            transition: none !important;
+            overflow: visible !important;
+        }
+        
+        .hero-box:hover {
+            padding: 20px 16px !important;
+        }
+        
+        /* Disable the overlay animation that causes flickering */
+        .hero-box::after {
+            display: none !important;
+            content: none !important;
+            width: 0 !important;
+            height: 0 !important;
+            opacity: 0 !important;
+        }
+        
+        .hero-box:hover::after {
+            display: none !important;
+            content: none !important;
+            width: 0 !important;
+        }
+        
+        /* Hero subtitle - prevent wrapping, fix size */
+        .hero-box .hero-subtitle {
+            font-size: 11px !important;
+            letter-spacing: 0.15em !important;
+            line-height: 1.4 !important;
+            white-space: nowrap !important;
+            overflow: visible !important;
+            text-overflow: clip !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .hero-box .hero-subtitle .sub-default {
+            opacity: 1 !important;
+            display: inline-block !important;
+            position: relative !important;
+            font-size: 11px !important;
+            transition: none !important;
+            white-space: nowrap !important;
+            overflow: visible !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        /* Completely hide hover subtitle on Firefox mobile */
+        .hero-box .hero-subtitle .sub-hover {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            max-height: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+            font-size: 0 !important;
+            pointer-events: none !important;
+        }
+        
+        .hero-box:hover .hero-subtitle .sub-default {
+            opacity: 1 !important;
+        }
+        
+        .hero-box:hover .hero-subtitle .sub-hover {
+            display: none !important;
+            opacity: 0 !important;
+        }
+        
+        /* Hero expanded text - proper font size, always visible */
+        .hero-box .hero-expanded {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            padding: 16px 10px !important;
+            font-size: 13px !important;
+            line-height: 1.7 !important;
+            overflow: visible !important;
+            transition: none !important;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .hero-box:hover .hero-expanded {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            padding: 16px 10px !important;
+        }
+        
+        /* ===== LICENSE BOX TAP CUTOFF FIX ===== */
+        .license-box {
+            transition: none !important;
+            overflow: visible !important;
+            padding: 14px 16px !important;
+        }
+        
+        .license-box::before {
+            transition: none !important;
+            transform: translateY(-50%) scale(1) !important;
+            opacity: 0.1 !important;
+        }
+        
+        .license-box:hover::before {
+            transform: translateY(-50%) scale(1) !important;
+            opacity: 0.1 !important;
+        }
+        
+        .license-box .license-main {
+            font-size: 13px !important;
+            line-height: 1.5 !important;
+        }
+        
+        /* Always show license extra - no hover animation */
+        .license-box .license-extra {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            margin-top: 12px !important;
+            overflow: visible !important;
+            transition: none !important;
+            font-size: 12px !important;
+            line-height: 1.5 !important;
+        }
+        
+        .license-box:hover .license-extra {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            margin-top: 12px !important;
+        }
+        
+        /* ===== FOOTER BOX TAP CUTOFF FIX ===== */
+        .footer-box {
+            transition: none !important;
+            overflow: visible !important;
+            padding: 12px 14px !important;
+        }
+        
+        .footer-box .footer-main {
+            font-size: 12px !important;
+            line-height: 1.5 !important;
+            padding-left: 0 !important;
+        }
+        
+        /* Always show footer extra - no hover animation */
+        .footer-box .footer-extra {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            margin-top: 8px !important;
+            overflow: visible !important;
+            transition: none !important;
+            font-size: 11px !important;
+            line-height: 1.5 !important;
+            padding-left: 0 !important;
+        }
+        
+        .footer-box:hover .footer-extra {
+            max-height: none !important;
+            height: auto !important;
+            opacity: 1 !important;
+            margin-top: 8px !important;
+        }
+        
+        /* ===== DISABLE ALL HOVER EFFECTS ON FIREFOX MOBILE ===== */
+        .info-box .title-link,
+        .info-box .title-link-solid,
+        .info-box .title-collapse,
+        .info-box .title-collapse-solid,
+        .nav-box .nav-item,
+        .news-box .news-post,
+        .featured-box .featured-name a {
+            transition: none !important;
+        }
+        
+        .info-box .title-link:hover,
+        .info-box .title-collapse:hover {
+            background: linear-gradient(90deg, #1c1e2a, #2a2d3a) !important;
+        }
+        
+        .info-box .title-link-solid:hover,
+        .info-box .title-collapse-solid:hover {
+            background: #1c1e2a !important;
+        }
+        
+        .nav-box .nav-item:hover,
+        .nav-box .nav-item:nth-child(1):hover,
+        .nav-box .nav-item:nth-child(2):hover,
+        .nav-box .nav-item:nth-child(3):hover,
+        .nav-box .nav-item:nth-child(4):hover {
+            background: #1c1e2a !important;
+        }
+        
+        .news-box .news-post:hover {
+            background: transparent !important;
+        }
+        
+        .featured-box .featured-name a:hover {
+            color: #7a9ec2 !important;
+        }
+        
+        /* Disable featured box hover on Firefox mobile */
+        .featured-box .featured-content {
+            transition: none !important;
+        }
+        
+        .featured-box .featured-content:hover {
+            background: #242529 !important;
+        }
+        
+        /* ===== FIREFOX MOBILE ONLY NOTICE BOX ===== */
+        .firefox-mobile-notice {
+            display: block !important;
+            border: 1px solid #c9a227;
+            border-radius: 5px;
+            overflow: visible;
+            margin: 1em 0;
+            box-shadow: 2px 2px 8px rgb(92 92 92 / 26%);
+            background: linear-gradient(135deg, #2a2515 0%, #1c1e2a 100%);
+            color: #fff;
+            padding: 14px 16px;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: left;
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        .firefox-mobile-notice::before {
+            content: '🦊';
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+        
+        .firefox-mobile-notice .notice-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 13px;
+            color: #c9a227;
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .firefox-mobile-notice .notice-content {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: normal;
+            font-size: 12px;
+            color: #ccc;
+            line-height: 1.6;
+            -moz-text-size-adjust: 100% !important;
+        }
+        
+        .firefox-mobile-notice .notice-content a {
+            color: #7a9ec2;
+            text-decoration: none;
+        }
+        
+        .firefox-mobile-notice .notice-content a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* ==========================================
+   REDUCED MOTION PREFERENCE
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    
+    .info-box .title-link,
+    .info-box .title-link-solid,
+    .info-box .title-collapse,
+    .info-box .title-collapse-solid,
+    .nav-box .nav-item,
+    .news-box .news-post,
+    .license-box::before,
+    .license-box .license-extra,
+    .footer-box .footer-extra,
+    .hero-box,
+    .hero-box::after,
+    .hero-box .hero-subtitle .sub-default,
+    .hero-box .hero-subtitle .sub-hover,
+    .hero-box .hero-expanded {
+        transition: none;
+    }
+}
+[[/module]]
